@@ -3,21 +3,18 @@
 // ----------------------------
 // Jeder Baustein hat einen Namen und ein oder zwei Icons.
 const bausteine = [
-  { name:"Abenteuer draußen", icon:"🌲" },
-  { name:"Reisen & Entdecken", icon:"🌍" },
-  { name:"Tiere entdecken", icon:"🐾" },
-  { name:"Pflanzen & Umwelt", icon:"🌱" },
-  { name:"Nachhaltigkeit & Zukunft", icon:"♻️" },
-  { name:"Erfinden & Basteln", icon:"🔧" },
-  { name:"Bau & Gestaltung", icon:"🧩" },
-  { name:"Gaming & Programmieren", icon:"🎮" },
-  { name:"Planeten & Sterne", icon:"✨" },
-  { name:"Mobil & Technik", icon:"🚀" },
-  { name:"Kreative Künste", icon:"🎨🎶" },
-  { name:"Sprachen & Kulturen", icon:"🗣️" },
-  { name:"Geschichte erleben", icon:"🏺" },
-  { name:"Ernährung & Gesundheit", icon:"⚽💪" },
-  { name:"Gemeinsam die Welt verbessern", icon:"🤝" }
+  { name:"Wald & Tiere", icon:"🌲🐾" },
+  { name:"Bauernhof", icon:"🌍" },
+  { name:"Wüste", icon:"🌱" },
+  { name:"Stadt", icon:"♻️" },
+  { name:"Krankenhaus", icon:"🔧" },
+  { name:"Feuerwehr & Polizei", icon:"🔧" },
+  { name:"Rakete", icon:"🧩" },
+  { name:"Rennsport", icon:"🎮" },
+  { name:"Auto", icon:"🧩" },
+  { name:"Flugzeug", icon:"🧩" },
+  { name:"Ninja", icon:"💪" },
+  { name:"Fussball", icon:"⚽💪" }
 ];
 
 // ----------------------------
@@ -29,13 +26,10 @@ const bausteine = [
 // - beschreibung: Textbeschreibung, was die Kinder dort lernen
 // - stundenplan: Beispielstundenplan, zeigt den Ablauf
 const spezialisierungen = [
-  { name:"Sport & Gesundheit", cores:["Abenteuer draußen", "Ernährung & Gesundheit", "Geschichte erleben"], beschreibung:"Fit bleiben, spielen, bewegen.", stundenplan:["Sportspiele","Tanz & Bewegung","Teamspiele"] },
-  { name:"Natur & Umwelt", cores:["Tiere entdecken", "Pflanzen & Umwelt", "Nachhaltigkeit & Zukunft"], beschreibung:"Natur erkunden, Tiere und Pflanzen kennenlernen.", stundenplan:["Tierbeobachtung","Garten & Pflanzen","Umweltprojekte"] },
-  { name:"Abenteuer & Reisen", cores:["Abenteuer draußen", "Reisen & Entdecken", "Geschichte erleben", "Sprachen & Kulturen"], beschreibung:"Abenteuer erleben und ferne Orte entdecken.", stundenplan:["Reisen & Kulturen","Outdoor-Aktivitäten","Abenteuer-Training"] },
-  { name:"Technik & Tüftelei", cores:["Erfinden & Basteln", "Gaming & Programmieren", "Mobil & Technik", "Bau & Gestaltung"], beschreibung:"Tüfteln, bauen, programmieren.", stundenplan:["Robotik","Programmieren","Bauprojekte"] },
-  { name:"Weltraum-Entdeckung", cores:["Planeten & Sterne", "Mobil & Technik", "Gaming & Programmieren"], beschreibung:"Das Weltall erforschen und Raketen bauen.", stundenplan:["Astronomie","Raketenbau","Space-Games"] },
-  { name:"Künstlerische Träume", cores:["Kreative Künste", "Sprachen & Kulturen","Bau & Gestaltung", "Gaming & Programmieren"], beschreibung:"Malen, Musik, Geschichten erfinden.", stundenplan:["Kunst & Musik","Theater","Kreatives Schreiben"] },
-  { name:"Menschen & Welt", cores:["Reisen & Entdecken", "Ernährung & Gesundheit", "Geschichte erleben", "Sprachen & Kulturen", "Gemeinsam die Welt verbessern"], beschreibung:"Anderen helfen, Kulturen kennenlernen.", stundenplan:["Projekte & Soziales","Sprachen & Kulturen","Geschichte & Gesellschaft"]}
+  { name:"Natur", cores:["Wald & Tiere", "Bauernhof", "Wüste"], beschreibung:"Bau dir dein Bild von der Natur", stundenplan:["Farm","Tiere halten","Natur entdecken"] },
+  { name:"City", cores:["Stadt", "Krankenhaus", "Feuerwehr & Polizei"], beschreibung:"Erstelle eine Stadt mit allem was dazu gehört", stundenplan:["Haus","Hochhaus","Sehenswertes"] },
+  { name:"Action", cores:["Ninja", "Rennsport", "Fussball"], beschreibung:"Sport als Abenteuer, entwickel deine eigenen Sportarea", stundenplan:["Fit","Outdoor-Aktivitäten","Spiel"] },
+  { name:"Technik", cores:["Auto", "Flugzeug", "Rakete"], beschreibung:"Tüfteln, bauen, technisch überlegen", stundenplan:["Robotik","Programmieren","Bauprojekte"] }
 ];
 
 // ----------------------------
@@ -151,4 +145,5 @@ function resetAll(){
 // Zurück zum ersten Schritt
   document.getElementById("step1").classList.remove("hidden");
 }
+
 
