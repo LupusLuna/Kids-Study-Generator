@@ -131,10 +131,11 @@ function showResult(spec){
 
   // Inhalte einfügen
   result.innerHTML=`
+    <span style="color:#e0eeee;">
     <h2>${spec.name}</h2>
     <p>${spec.beschreibung}</p>
     <h3>Stundenplan:</h3>
-    <ul>${spec.stundenplan.map(f=>`<li>${f}</li>`).join("")}</ul>
+    <ul>${spec.stundenplan.map(f=>`<li>${f}</li>`).join("")}</ul></span>
     <br><button class="reset" onclick="resetAll()">Neu starten</button>
   `;
 }
@@ -150,3 +151,4 @@ function resetAll(){
 // Zurück zum ersten Schritt
   document.getElementById("step1").classList.remove("hidden");
 }
+
