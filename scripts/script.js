@@ -70,7 +70,7 @@ function renderBausteine(){
       if(selectedBausteine.includes(b.name)){ // Wenn schon gewählt: abwählen
         selectedBausteine = selectedBausteine.filter(x=>x!==b.name);
         div.classList.remove("selected");
-      } else if(selectedBausteine.length<3){ // Maximal 3 Bausteine wählbar
+      } else if(selectedBausteine.length<2){ // Maximal 2 Bausteine wählbar
         selectedBausteine.push(b.name); 
         div.classList.add("selected");
       }
@@ -145,5 +145,6 @@ function resetAll(){
 // Zurück zum ersten Schritt
   document.getElementById("step1").classList.remove("hidden");
 }
+
 
 
