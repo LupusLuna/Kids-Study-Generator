@@ -1,12 +1,13 @@
 body { 
     font-family: Arial, sans-serif; 
-    background:#f0f6ff; 
+    background-image: url('https://static.vecteezy.com/system/resources/previews/011/773/514/non_2x/cartoon-galaxy-background-with-planets-and-stars-free-vector.jpg'); 
+    background-repeat: no-repeat;
     text-align:center; 
     margin:0; 
     padding:20px; 
 }
 
-h1,h2 { 
+h1,h2,h3,h4,h5 { 
     color:#333; 
 }
 
@@ -74,7 +75,10 @@ h1,h2 {
     margin-left:auto; 
     margin-right:auto;
     transition: transform 0.3s ease; 
+    color:#e0eeee;
 }
 ul { 
     text-align:left; 
+    color:#e0eeee;
 }
+
