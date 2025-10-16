@@ -3,18 +3,18 @@
 // ----------------------------
 // Jeder Baustein hat einen Namen und ein oder zwei Icons.
 const bausteine = [
-  { name:"Wald & Tiere", icon:"🌲🐾", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Wald%26Tiere_01.jpg" },
-  { name:"Bauernhof", icon:"🌍", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Bauernhof_01.jpg" },
-  { name:"Wüste", icon:"🌱", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/W%C3%BCste_02.jpg" },
-  { name:"Stadt", icon:"♻️", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Stadt_02.jpgjpg" },
-  { name:"Krankenhaus", icon:"🔧", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Krankenhaus_01.jpg" },
-  { name:"Feuerwehr & Polizei", icon:"🔧", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Feuerwehr%26Polizei_03.jpg" },
-  { name:"Rakete", icon:"🧩", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Rakete_01.jpg" },
-  { name:"Rennsport", icon:"🎮", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Rennsport_02.jpg" },
-  { name:"Auto", icon:"🧩", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Auto_01.jpg" },
-  { name:"Flugzeug", icon:"🧩", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Flugzeug_01.jpg" },
-  { name:"Ninja", icon:"💪", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Ninja_01.jpg" },
-  { name:"Fussball", icon:"⚽💪", bild:"https://github.com/LupusLuna/Kids-Study2/blob/main/images/Fu%C3%9Fball_02.jpg" }
+  { name:"Wald & Tiere", icon:"🌲🐾", image:"../images/Wald&Tiere_01.jpg" },
+  { name:"Bauernhof", icon:"🌍", image:"../images/Bauernhof_01.jpg" },
+  { name:"Wüste", icon:"🌱", image:"../images/Wüste_02.jpg" },
+  { name:"Stadt", icon:"♻️", image:"../images/Stadt_02.jpg" },
+  { name:"Krankenhaus", icon:"🔧", image:"../images/Krankenhaus_01.jpg" },
+  { name:"Feuerwehr & Polizei", icon:"🚒👮", image:"../images/Feuerwehr&Polizei_03.jpg" },
+  { name:"Rakete", icon:"🚀", image:"../images/Rakete_01.jpg" },
+  { name:"Rennsport", icon:"🏁", image:"../images/Rennsport_02.jpg" },
+  { name:"Auto", icon:"🚗", image:"../images/Auto_01.jpg" },
+  { name:"Flugzeug", icon:"✈️", image:"../images/Flugzeug_01.jpg" },
+  { name:"Ninja", icon:"🥷", image:"../images/Ninja_01.jpg" },
+  { name:"Fussball", icon:"⚽", image:"../images/Fußball_02.jpg" }
 ];
 
 // ----------------------------
@@ -141,6 +141,7 @@ function resetAll(){
   document.querySelectorAll("#step1,#step2,#step3,#result").forEach(div=>div.classList.add("hidden"));
   document.getElementById("step1").classList.remove("hidden");
 }
+
 
 
 
